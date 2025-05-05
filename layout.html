@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- libs css -->
+    <!-- 
+        jsvectormap.min.css
+        nouislider.min.css
+        mermaid.min.css
+        swiper-bundle.min.css
+        choices.min.css
+        flatpickr.min.css
+        prism.css
+        simplebar.min.css
+        sweetalert2.min.css
+        toastify.min.css
+        tom-select.default.min.css
+     -->
+    <link rel="stylesheet" href="./assets/libs/jsvectormap/jsvectormap.min.css" />
+    <link rel="stylesheet" href="./assets/libs/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="./assets/libs/gridjs/mermaid.min.css" />
+    <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/libs/choices.js/choices.min.css" />
+    <link rel="stylesheet" href="./assets/libs/flatpickr/flatpickr.min.css" />
+    <link rel="stylesheet" href="./assets/libs/prismjs/prism.css" />
+    <link rel="stylesheet" href="./assets/libs/simplebar/simplebar.min.css" />
+    <link rel="stylesheet" href="./assets/libs/sweetalert2/sweetalert2.min.css" />
+    <link rel="stylesheet" href="./assets/libs/toastify/toastify.min.css" />
+    <link rel="stylesheet" href="./assets/libs/tom-select/tom-select.default.min.css" />
+    <link rel="stylesheet" href="./assets/libs/apex-charts/apexcharts.css" />
+    <!-- app css -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <script src="https://kit.fontawesome.com/3919a4fa28.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+      div {
+        padding: 10px;
+      }
+      .container {
+        border: 1px solid red;
+      }
+      .row {
+        border: 1px solid green;
+      }
+      .col {
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+
+  <!-- side nav -->
+
+  <div class="sidebar">
+    <div class="sidebar-logo">
+        <h1>Nomad</h1>
+    </div>
+    <nav class="nav-links">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Dashboard</a></li>
+        </ul>
+    </nav>
+    <div class="sidebar-footer">
+        <a href="#">Logout</a>
+    </div>
+  </div>
+
+  <body>
+    <div>small</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-xl-12">
+          <div class="row">
+            <div class="border col-12 col-xl-3">card 1</div>
+            <div class="border col-12 col-xl-3">card 2</div>
+            <div class="border col-12 col-xl-3">card 3</div>
+            <div class="border col-12 col-xl-3">card 4</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 order-xl-last">
+          <div class="border col-12">location</div>
+        </div>
+        <div class="col-12 col-xl-9">
+          <div class="row">
+            <div class="border col-12 col-xl-9">graph</div>
+            <div class="border col-12 col-xl-3">detail</div>
+            <div class="border col-12 col-xl-12">message</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    <div>small</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="border col-12">card 1</div>
+            <div class="border col-12">card 2</div>
+            <div class="border col-12">card 3</div>
+            <div class="border col-12">card 4</div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="border col-12">location</div>
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <div class="border col-12">graph</div>
+            <div class="border col-12">detail</div>
+            <div class="border col-12">message</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>mediem</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <div class="border col-12">card 1</div>
+            <div class="border col-12">card 2</div>
+            <div class="border col-12">card 3</div>
+            <div class="border col-12">card 4</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="border col-12">location</div>
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <div class="border col-12">graph</div>
+            <div class="border col-12">detail</div>
+            <div class="border col-12">message</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>x large</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="border col-3">card 1</div>
+            <div class="border col-3">card 2</div>
+            <div class="border col-3">card 3</div>
+            <div class="border col-3">card 4</div>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="row">
+            <div class="border col-9">graph</div>
+            <div class="border col-3">detail</div>
+            <div class="border col-12">message</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="border col-12">location</div>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <div class="border card">
+      <div class="border card-header"></div>
+      <div class="border card-body">
+        <div class="border table-responsive table-card">
+          <table class="border table table-centered align-middle table-nowrap">
+            <thead class="border">
+              <th>order id</th>
+              <th>product name</th>
+              <th>customer name</th>
+              <th>amount</th>
+              <th>order date</th>
+              <th>delivery date</th>
+              <th>vendor</th>
+              <th>rating</th>
+              <th>status</th>
+            </thead>
+            <tbody class="border">
+              <tr>
+                <td>#tb010331</td>
+                <td>mackbook pro</td>
+                <td>terry white</td>
+                <td>$658.00</td>
+                <td>17 dec 2022</td>
+                <td>26 jan 2023</td>
+                <td>brazil</td>
+                <td>4.5</td>
+                <td>status</td>
+              </tr>
+              <tr>
+                <td>#tb010331</td>
+                <td>mackbook pro</td>
+                <td>terry white</td>
+                <td>$658.00</td>
+                <td>17 dec 2022</td>
+                <td>26 jan 2023</td>
+                <td>brazil</td>
+                <td>4.5</td>
+                <td>status</td>
+              </tr>
+              <tr>
+                <td>#tb010331</td>
+                <td>mackbook pro</td>
+                <td>terry white</td>
+                <td>$658.00</td>
+                <td>17 dec 2022</td>
+                <td>26 jan 2023</td>
+                <td>brazil</td>
+                <td>4.5</td>
+                <td>status</td>
+              </tr>
+              <tr>
+                <td>#tb010331</td>
+                <td>mackbook pro</td>
+                <td>terry white</td>
+                <td>$658.00</td>
+                <td>17 dec 2022</td>
+                <td>26 jan 2023</td>
+                <td>brazil</td>
+                <td>4.5</td>
+                <td>status</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="border col-12 col-lg-3">Customer Satisfaction</div>
+        <div class="border col-12 col-lg-9">Stock Report</div>
+        <div class="border col-12 col-md-6 col-lg-3">Product Delivery</div>
+        <div class="border col-12 col-md-6 col-lg-3">Top Categories</div>
+        <div class="border col-12 col-md-6 col-lg-3">New Products</div>
+        <div class="border col-12 col-md-6 col-lg-3">Top Products</div>
+      </div>
+    </div>
+
+    <!-- table -->
+
+    <!-- bootstrap js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- libs js -->
+    <!-- 
+        simplebar.min.js
+        toastify.min.js
+        choices.min.js
+        flatpickr.min.js
+        prism.js
+        sweetalert2.min.js
+        rater-js/index.min.js
+        tom-select.init.js
+        masonry.pkgd.min.js
+        lord-icon-2.1.0.js
+        apexcharts.min.js
+        jsvectormap.min.js
+        world-merc.js
+        gridjs.umd.js
+        list.min.js
+        swiper-bundle.min.js
+        nouislider.min.js
+        wNumb.min.js
+     -->
+    <div id="linechart">some text</div>
+    <script src="./assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="./assets/libs/toastify/toastify.min.js"></script>
+    <script src="./assets/libs/choices.js/choices.min.js"></script>
+    <script src="./assets/libs/flatpickr/flatpickr.min.js"></script>
+    <script src="./assets/libs/prismjs/prism.js"></script>
+    <script src="./assets/libs/sweetalert2/sweetalert2.min.js"></script>
+    <script src="./assets/libs/rater-js/index.min.js"></script>
+    <script src="./assets/libs/tom-select/tom-select.complete.js"></script>
+    <script src="./assets/libs/masonry-layout/masonry.pkgd.min.js"></script>
+    <script src="./assets/libs/lordicon/lordicon.js"></script>
+    <script src="./assets/libs/jsvectormap/jsvectormap.min.js"></script>
+    <script src="./assets/libs/gridjs/gridjs.umd.js"></script>
+    <script src="./assets/libs/list.js/list.min.js"></script>
+    <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/libs/nouislider/nouislider.min.js"></script>
+    <script src="./assets/libs/wNumb/wNumb.min.js"></script>
+    <script src="./assets/libs/apex-charts/apexcharts.min.js"></script>
+    <!-- app js -->
+    <script src="./assets/js/preferences.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script type="text/javascript">
+      var options = {
+        series: [
+          {
+            name: "Desktops",
+            data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
+          },
+        ],
+        chart: {
+          height: 350,
+          type: "line",
+          zoom: {
+            enabled: false,
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          curve: "straight",
+        },
+        title: {
+          text: "Product Trends by Month",
+          align: "left",
+        },
+        grid: {
+          row: {
+            colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
+            opacity: 0.5,
+          },
+        },
+        xaxis: {
+          categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+        },
+      };
+
+      var chart = new ApexCharts(document.querySelector("#linechart"), options);
+      chart.render();
+    </script>
+  </body>
+</html>

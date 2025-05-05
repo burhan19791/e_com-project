@@ -4,190 +4,189 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- favicon -->
+    <link rel="icon" href="nomad.ico" type="image/x-icon" />
+    <!-- font link -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <!-- remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
     <!-- bootstrap css -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <!-- libs css -->
-    <!-- 
-        jsvectormap.min.css
-        nouislider.min.css
-        mermaid.min.css
-        swiper-bundle.min.css
-        choices.min.css
-        flatpickr.min.css
-        prism.css
-        simplebar.min.css
-        sweetalert2.min.css
-        toastify.min.css
-        tom-select.default.min.css
-     -->
-    <link rel="stylesheet" href="./assets/libs/jsvectormap/jsvectormap.min.css" />
-    <link rel="stylesheet" href="./assets/libs/nouislider/nouislider.min.css" />
-    <link rel="stylesheet" href="./assets/libs/gridjs/mermaid.min.css" />
-    <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./assets/libs/choices.js/choices.min.css" />
-    <link rel="stylesheet" href="./assets/libs/flatpickr/flatpickr.min.css" />
-    <link rel="stylesheet" href="./assets/libs/prismjs/prism.css" />
-    <link rel="stylesheet" href="./assets/libs/simplebar/simplebar.min.css" />
-    <link rel="stylesheet" href="./assets/libs/sweetalert2/sweetalert2.min.css" />
-    <link rel="stylesheet" href="./assets/libs/toastify/toastify.min.css" />
-    <link rel="stylesheet" href="./assets/libs/tom-select/tom-select.default.min.css" />
-    <link rel="stylesheet" href="./assets/libs/apex-charts/apexcharts.css" />
-    <!-- app css -->
+    <!-- global css -->
     <link rel="stylesheet" href="./assets/css/global.css" />
+    <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/custom.css" />
+    <!-- app css -->
     <link rel="stylesheet" href="./assets/css/app.css" />
-    <style type="text/css">
-      div {
-        padding: 10px;
-      }
-      .container {
-        border: 1px solid red;
-      }
-      .row {
-        border: 1px solid green;
-      }
-      .col {
-        border: 1px solid grey;
-      }
-    </style>
+    <!-- internal styles -->
+    <style></style>
+    <!-- app js -->
+    <script src="./assets/js/app.js"></script>
+    <!-- js script -->
+    <script></script>
   </head>
+
   <body>
-    <div>small</div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 col-xl-12">
-          <div class="row">
-            <div class="border col-12 col-xl-3">card 1</div>
-            <div class="border col-12 col-xl-3">card 2</div>
-            <div class="border col-12 col-xl-3">card 3</div>
-            <div class="border col-12 col-xl-3">card 4</div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-3 order-xl-last">
-          <div class="border col-12">location</div>
-        </div>
-        <div class="col-12 col-xl-9">
-          <div class="row">
-            <div class="border col-12 col-xl-9">graph</div>
-            <div class="border col-12 col-xl-3">detail</div>
-            <div class="border col-12 col-xl-12">message</div>
-          </div>
-        </div>
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar" active="false">
+      <div id="menu-close" class="icon d-sm-none">
+        <a href=""><i class="ri-arrow-left-s-line"></i></a>
       </div>
-    </div>
-    <!-- 
-    <div>small</div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="row">
-            <div class="border col-12">card 1</div>
-            <div class="border col-12">card 2</div>
-            <div class="border col-12">card 3</div>
-            <div class="border col-12">card 4</div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="border col-12">location</div>
-        </div>
-        <div class="col-12">
-          <div class="row">
-            <div class="border col-12">graph</div>
-            <div class="border col-12">detail</div>
-            <div class="border col-12">message</div>
-          </div>
-        </div>
+      <div class="sidebar-logo">
+        <img src="assets/images/nomad_logo.png" alt="" />
+        <span class="logo-name navbar-link-title">Nomad</span>
       </div>
-    </div>
-    <div>mediem</div>
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <div class="row">
-            <div class="border col-12">card 1</div>
-            <div class="border col-12">card 2</div>
-            <div class="border col-12">card 3</div>
-            <div class="border col-12">card 4</div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="border col-12">location</div>
-        </div>
-        <div class="col-12">
-          <div class="row">
-            <div class="border col-12">graph</div>
-            <div class="border col-12">detail</div>
-            <div class="border col-12">message</div>
-          </div>
-        </div>
+
+      <nav class="sidebar-nav">
+        <ul>
+          <li>
+            <a href="#" class="sidebar-nav-link">
+              <i class="ri-dashboard-horizontal-line"></i><span class="navbar-link-title">Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="sidebar-nav-link">
+              <i class="ri-box-3-line"></i><span class="navbar-link-title">Products</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="sidebar-nav-link">
+              <i class="ri-shopping-cart-2-line"></i><span class="navbar-link-title">Orders</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="sidebar-nav-link">
+              <i class="ri-spy-line"></i>
+              <span class="navbar-link-title">Sellers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sidebar-nav-link">
+              <i class="ri-file-list-3-line"></i><span class="navbar-link-title">Invoice</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="sidebar-nav-link">
+              <i class="ri-truck-line"></i><span class="navbar-link-title">Shipping</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="sidebar-nav-link">
+              <i class="ri-price-tag-3-line"></i><span class="navbar-link-title">Coupons</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="sidebar-nav-link">
+              <i class="ri-star-line"></i><span class="navbar-link-title">Reviews</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="sidebar-nav-link">
+              <i class="ri-store-line"></i><span class="navbar-link-title">Brands</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="sidebar-nav-link">
+              <i class="ri-line-chart-line"></i><span class="navbar-link-title">Statistics</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="sidebar-nav-link">
+              <i class="ri-account-circle-line"></i><span class="navbar-link-title">Account</span></a
+            >
+          </li>
+        </ul>
+        <!-- Add more links to see scrolling effect -->
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="#"><i class="ri-logout-box-line"></i><span class="navbar-link-title">Logout</span></a>
       </div>
-    </div>
-    <div>x large</div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="row">
-            <div class="border col-3">card 1</div>
-            <div class="border col-3">card 2</div>
-            <div class="border col-3">card 3</div>
-            <div class="border col-3">card 4</div>
+    </aside>
+
+    <!-- header -->
+    <header class="header main-area-content" sticked="false">
+      <section class="container d-flex align-items-center">
+        <div class="date">
+          <span class="large-screen-date"><i class="ri-calendar-fill"></i>May 02, 2025</span>
+          <div class="mobile-logo">
+            <img src="assets/images/nomad_logo.png" alt="" />
+            <span class="logo-name">Nomad</span>
           </div>
         </div>
-        <div class="col-9">
-          <div class="row">
-            <div class="border col-9">graph</div>
-            <div class="border col-3">detail</div>
-            <div class="border col-12">message</div>
+        <div class="icon">
+          <a href=""><i class="ri-store-line"></i></a>
+        </div>
+        <div class="icon icon-fullscreen">
+          <a href=""><i class="ri-fullscreen-line"></i></a>
+        </div>
+        <div class="icon">
+          <a href=""><i class="ri-sun-line"></i></a>
+        </div>
+        <div class="icon">
+          <a href=""><i class="ri-notification-3-line"></i></a>
+          <span>5</span>
+        </div>
+        <div class="separator">&nbsp;</div>
+        <div>
+          <a href=""><img class="img" src="assets/images/person-image.jpg" /></a>
+        </div>
+        <div id="menu" class="menu icon d-sm-none">
+          <a href=""><i class="ri-menu-line"></i></a>
+        </div>
+        <div class="profile-title">
+          <p class="name">Burhan</p>
+          <p class="title">Founder</p>
+        </div>
+      </section>
+    </header>
+
+
+
+    
+    <!-- cards -->
+
+    <!-- main -->
+    <main class="main-content main-area-content">
+      <section class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-12">
+            <div class="row">
+              <div class="card col-12 col-xl-3">
+                <div class="card-icon"><i class="ri-money-dollar-circle-fill"></i></div>
+                <div class="card-text">
+                  <h4>250,000 AED</h4>
+                  <p>Total Earnings</p>
+                </div>
+                <span class="card-info"> ? </span>
+                <span class="card-percent"> +24% </span>
+              </div>
+              <div class="border col-12 col-xl-3">card 2</div>
+              <div class="border col-12 col-xl-3">card 3</div>
+              <div class="border col-12 col-xl-3">card 4</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 order-xl-last">
+            <div class="border col-12">location</div>
+          </div>
+          <div class="col-12 col-xl-9">
+            <div class="row">
+              <div class="border col-12 col-xl-9">graph</div>
+              <div class="border col-12 col-xl-3">detail</div>
+              <div class="border col-12 col-xl-12">message</div>
+            </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="border col-12">location</div>
-        </div>
-      </div>
-    </div>
-    -->
+      </section>
+    </main>
+
+    <div class="scroll" style="height: 1000px; margin-left: 250px"></div>
+    <!-- scripts -->
     <!-- bootstrap js -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <!-- libs js -->
-    <!-- 
-        simplebar.min.js
-        toastify.min.js
-        choices.min.js
-        flatpickr.min.js
-        prism.js
-        sweetalert2.min.js
-        rater-js/index.min.js
-        tom-select.init.js
-        masonry.pkgd.min.js
-        lord-icon-2.1.0.js
-        apexcharts.min.js
-        jsvectormap.min.js
-        world-merc.js
-        gridjs.umd.js
-        list.min.js
-        swiper-bundle.min.js
-        nouislider.min.js
-        wNumb.min.js
-     -->
-    <script src="./assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="./assets/libs/toastify/toastify.min.js"></script>
-    <script src="./assets/libs/choices.js/choices.min.js"></script>
-    <script src="./assets/libs/flatpickr/flatpickr.min.js"></script>
-    <script src="./assets/libs/prismjs/prism.js"></script>
-    <script src="./assets/libs/sweetalert2/sweetalert2.min.js"></script>
-    <script src="./assets/libs/rater-js/index.min.js"></script>
-    <script src="./assets/libs/tom-select/tom-select.complete.js"></script>
-    <script src="./assets/libs/masonry-layout/masonry.pkgd.min.js"></script>
-    <script src="./assets/libs/lordicon/lordicon.js"></script>
-    <script src="./assets/libs/jsvectormap/jsvectormap.min.js"></script>
-    <script src="./assets/libs/gridjs/gridjs.umd.js"></script>
-    <script src="./assets/libs/list.js/list.min.js"></script>
-    <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/libs/nouislider/nouislider.min.js"></script>
-    <script src="./assets/libs/wNumb/wNumb.min.js"></script>
-    <script src="./assets/libs/apex-charts/apexcharts.min.js"></script>
-    <!-- app js -->
-    <script src="./assets/js/preferences.js"></script>
-    <script src="./assets/js/app.js"></script>
+    <!--  app init script -->
+    <script src="./assets/js/app.init.js"></script>
+    <!-- js script -->
+    <script></script>
   </body>
 </html>
