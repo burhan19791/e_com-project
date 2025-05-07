@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+      }
+
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background: #222;
+        color: white;
+        overflow-y: auto;
+        transition: transform 0.3s ease, width 0.3s ease;
+        z-index: 1000;
+        width: 250px;
+        /* thin scroll */
+        /* scrollbar-width: thin;
+        scrollbar-color: #555 transparent; */
+        scrollbar-width: none;
+      }
+      /* thin scroll */
+      /* .sidebar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .sidebar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .sidebar::-webkit-scrollbar-thumb {
+        background-color: #555;
+        border-radius: 3px;
+      }
+      .sidebar::-webkit-scrollbar-thumb:hover {
+        background-color: #777;
+      } */
+      .sidebar::-webkit-scrollbar {
+        display: none;
+      }
+      .sidebar ul {
+        list-style: none;
+        padding-top: 60px;
+      }
+
+      .sidebar ul li {
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .sidebar ul li i {
+        margin-right: 10px;
+        min-width: 20px;
+        text-align: center;
+      }
+
+      .sidebar ul li:hover,
+      .sidebar ul li.active {
+        background: #444;
+      }
+
+      .sidebar-text {
+        display: inline;
+      }
+
+      .menu-btn {
+        display: none;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1100;
+        font-size: 24px;
+        color: white;
+        background: #222;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .close-btn {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 20px;
+        background: none;
+        border: none;
+        color: white;
+      }
+
+      .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 900;
+      }
+
+      main {
+        flex: 1;
+        padding: 20px;
+        margin-left: 250px;
+        background: #f4f4f4;
+        transition: margin-left 0.3s ease;
+        min-height: 100vh;
+      }
+
+      /* Mobile: hide sidebar initially */
+      @media (max-width: 767px) {
+        .sidebar {
+          transform: translateX(-100%);
+        }
+
+        .sidebar.mobile-show {
+          transform: translateX(0);
+        }
+
+        .menu-btn {
+          display: block;
+        }
+
+        .close-btn {
+          display: block;
+        }
+
+        .overlay.mobile-show {
+          display: block;
+        }
+
+        main {
+          margin-left: 0;
+        }
+      }
+
+      /* Tablet: icons only */
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .sidebar {
+          width: 60px;
+          transform: translateX(0);
+        }
+
+        .sidebar-text {
+          display: none;
+        }
+
+        .menu-btn,
+        .overlay,
+        .close-btn {
+          display: none !important;
+        }
+
+        main {
+          margin-left: 60px;
+        }
+      }
+
+      /* Desktop: full sidebar */
+      @media (min-width: 1024px) {
+        .sidebar {
+          width: 250px;
+          transform: translateX(0);
+        }
+
+        .sidebar-text {
+          display: inline;
+        }
+
+        .menu-btn,
+        .overlay,
+        .close-btn {
+          display: none !important;
+        }
+
+        main {
+          margin-left: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+    <button class="close-btn" id="closeBtn"><i class="fas fa-times"></i></button>
+
+    <div class="sidebar" id="sidebar">
+      <ul id="navLinks">
+        <li><i class="fas fa-home"></i><span class="sidebar-text">Home</span></li>
+        <li><i class="fas fa-user"></i><span class="sidebar-text">Profile</span></li>
+        <li><i class="fas fa-cog"></i><span class="sidebar-text">Settings</span></li>
+        <li><i class="fas fa-envelope"></i><span class="sidebar-text">Messages</span></li>
+        <li><i class="fas fa-info-circle"></i><span class="sidebar-text">About</span></li>
+        <li><i class="fas fa-question-circle"></i><span class="sidebar-text">Help</span></li>
+        <li><i class="fas fa-home"></i><span class="sidebar-text">Home</span></li>
+        <li><i class="fas fa-user"></i><span class="sidebar-text">Profile</span></li>
+        <li><i class="fas fa-cog"></i><span class="sidebar-text">Settings</span></li>
+        <li><i class="fas fa-envelope"></i><span class="sidebar-text">Messages</span></li>
+        <li><i class="fas fa-info-circle"></i><span class="sidebar-text">About</span></li>
+        <li><i class="fas fa-question-circle"></i><span class="sidebar-text">Help</span></li>
+        <li><i class="fas fa-home"></i><span class="sidebar-text">Home</span></li>
+        <li><i class="fas fa-user"></i><span class="sidebar-text">Profile</span></li>
+        <li><i class="fas fa-cog"></i><span class="sidebar-text">Settings</span></li>
+        <li><i class="fas fa-envelope"></i><span class="sidebar-text">Messages</span></li>
+        <li><i class="fas fa-info-circle"></i><span class="sidebar-text">About</span></li>
+        <li><i class="fas fa-question-circle"></i><span class="sidebar-text">Help</span></li>
+        <li><i class="fas fa-home"></i><span class="sidebar-text">Home</span></li>
+        <li><i class="fas fa-user"></i><span class="sidebar-text">Profile</span></li>
+        <li><i class="fas fa-cog"></i><span class="sidebar-text">Settings</span></li>
+        <li><i class="fas fa-envelope"></i><span class="sidebar-text">Messages</span></li>
+        <li><i class="fas fa-info-circle"></i><span class="sidebar-text">About</span></li>
+        <li><i class="fas fa-question-circle"></i><span class="sidebar-text">Help</span></li>
+      </ul>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+      <h1>Responsive Sidebar</h1>
+      <p>This layout adjusts based on screen size.</p>
+    </main>
+
+    <script>
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+      const menuBtn = document.getElementById("menuBtn");
+      const closeBtn = document.getElementById("closeBtn");
+      const navLinks = document.querySelectorAll("#navLinks li");
+
+      function closeSidebar() {
+        sidebar.classList.remove("mobile-show");
+        overlay.classList.remove("mobile-show");
+      }
+
+      function openSidebar() {
+        sidebar.classList.add("mobile-show");
+        overlay.classList.add("mobile-show");
+      }
+
+      menuBtn.addEventListener("click", openSidebar);
+      closeBtn.addEventListener("click", closeSidebar);
+      overlay.addEventListener("click", closeSidebar);
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.forEach((l) => l.classList.remove("active"));
+          link.classList.add("active");
+          closeSidebar();
+        });
+      });
+    </script>
+  </body>
+</html>

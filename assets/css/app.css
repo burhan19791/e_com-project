@@ -1,9 +1,26 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.1); /* semi-transparent black */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 100; /* Just under the sidebar (z-index: 101) */
+}
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
 /* sidebar styles */
 .main-area-content {
   margin-left: 0px;
   width: calc(100% - 0px);
 }
-
 .large-screen-date {
   display: none;
 }
@@ -186,7 +203,21 @@
 
 /* main styles */
 .main-content {
-  padding: 20px;
+  padding: 24px 14px 0px;
+}
+
+.section-title h1,
+i {
+  display: inline-block;
+}
+
+.section-title h1 {
+  font-weight: medium;
+}
+
+.section-title i {
+  font-size: 40px;
+  color: #f1be46;
 }
 
 /* cards */
@@ -199,6 +230,50 @@
   padding: 36px 12px;
   border-radius: 16px;
   border: none;
+  margin: 8px;
+  max-width: 286px;
+}
+
+.card-2 .card-icon {
+  color: #1ea6d3;
+  background-color: #d3edf6;
+}
+
+.card-2 .card-info{
+  background-color: #d3edf6;
+  color: #1ea6d3;
+}
+
+.card-2 .card-percent{
+  color: #1ea6d3;
+}
+
+.card-3 .card-icon {
+  color: #F1BE46;
+  background-color: #FCF2DA;
+}
+
+.card-3 .card-info{
+  background-color: #FCF2DA;
+  color: #F1BE46;
+}
+
+.card-3 .card-percent{
+  color: #F1BE46;
+}
+
+.card-4 .card-icon {
+  color: #7C6BFF;
+  background-color: #E5E1FF;
+}
+
+.card-4 .card-info{
+  background-color: #E5E1FF;
+  color: #7C6BFF;
+}
+
+.card-4 .card-percent{
+  color: #7C6BFF;
 }
 
 .card-icon {
@@ -212,9 +287,6 @@
   border-radius: 50%;
   color: #4b93ff;
   margin-right: 12px;
-}
-
-.card-text {
 }
 
 .card-text h4 {
@@ -253,6 +325,49 @@
   right: 12px;
   color: #4b93ff;
 }
+
+
+
+
+/* detail */
+
+.detail-search{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.search-icon i{
+  font-size: 16px;
+  padding: 10px;
+  background-color: #4b93ff;
+  color: white;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+
+.search-date{
+  margin-left: 12px;
+  flex: 1;
+}
+
+.search-date p{
+  font-size: 10px;
+  margin: 0;
+}
+
+
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {

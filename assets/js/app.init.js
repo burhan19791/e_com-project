@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
   links.forEach((link) => {
     link.addEventListener("click", () => {
       links.forEach((l) => l.removeAttribute("active"));
+      const sidebar = document.getElementById("sidebar");
+      sidebar.setAttribute("active", "false");
+      const overlay = document.getElementById("overlay");
+      overlay.classList.remove("active");
       link.setAttribute("active", "true");
     });
   });
@@ -20,7 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.getElementById("menu");
   menu.addEventListener("click", (e) => {
     const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
     sidebar.setAttribute("active", "true");
+    overlay.classList.add("active");
     e.preventDefault();
   });
 
@@ -28,39 +34,15 @@ document.addEventListener("DOMContentLoaded", () => {
   menuClose.addEventListener("click", (e) => {
     const sidebar = document.getElementById("sidebar");
     sidebar.setAttribute("active", "false");
-    // setTimeout(() => {
-    //   sidebar.style.pointerEvents = "none";
-    //   sidebar.style.visibility = "hidden";
-    // }, 500);
+    const overlay = document.getElementById("overlay");
+    overlay.classList.remove("active");
     e.preventDefault();
   });
-
-  // const sidebar = document.getElementById("sidebar");
-  // sidebar.addEventListener("transitionend", function hideSidebar() {
-  //   if (!sidebar.classList.contains("active")) {
-  //     sidebar.style.display = "none";
-  //   }
-  //   sidebar.removeEventListener("transitionend", hideSidebar);
-  // });
-
-  // const menu = document.getElementById("menu");
-  // menu.addEventListener("click", (e) => {
-  //   const sidebar = document.getElementById("sidebar");
-  //   sidebar.setAttribute("active", "true");
-  //   e.preventDefault();
-  // });
-  // const menuClose = document.getElementById("menu-close");
-  // console.log("close is: ", menuClose);
-  // menuClose.addEventListener("click", () => {
-  //   const sidebar = document.getElementById("sidebar");
-  //   console.log("sidebar is: ", sidebar);
-  //   sidebar.setAttribute("active", "false");
-  // });
-
-  // sidebar.addEventListener('transitionend', function hideSidebar() {
-  //   if (!sidebar.classList.contains('active')) {
-  //     sidebar.style.display = 'none';
-  //   }
-  //   sidebar.removeEventListener('transitionend', hideSidebar);
-  // });
+  const overlay = document.getElementById("overlay");
+  overlay.addEventListener("click", () => {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.setAttribute("active", "false");
+    const overlay = document.getElementById("overlay");
+    overlay.classList.remove("active");
+  });
 });
