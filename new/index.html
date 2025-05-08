@@ -3,50 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- title -->
+    <title>Nomad Home</title>
+    <!-- favicon -->
+    <link rel="icon" href="../nomad.ico" type="image/x-icon" />
+    <!-- boot strap -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <!-- font link -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+    <!-- global style -->
     <link rel="stylesheet" href="./global.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+    <!-- app style -->
     <link rel="stylesheet" href="./app.css" />
+    <!-- internal styles -->
     <style></style>
+    <!-- app js -->
+    <script src="../assets/js/app.js"></script>
+    <!-- js script -->
+    <script></script>
   </head>
   <body>
-    <button id="menuBtn" class="menu-btn d-block d-md-none"><i class="fas fa-bars"></i></button>
-    <div id="sidebar" class="sidebar">
-      <div>
-        <div>top</div>
-        <button id="closeBtn" class="close-btn d-block d-md-none"><i class="fas fa-times"></i></button>
+    <!-- <button id="menuBtn" class="menu-btn d-block d-md-none"><i class="fas fa-bars"></i></button> -->
+    <!-- overlay -->
+    <div class="overlay d-md-none" id="overlay"></div>
+    <!-- header -->
+    <header id="header" class="header main-content" sticked="false">
+      <section class="container-fluid p-0 d-flex align-items-center">
+        <div class="date">
+          <span class="d-none d-md-block"><i class="ri-calendar-fill"></i>May 02, 2025</span>
+          <div class="d-md-none">
+            <img src="../assets/images/nomad_logo.png" alt="" />
+            <span class="logo-name">Nomad</span>
+          </div>
+        </div>
+        <div class="icon">
+          <a href=""><i class="ri-store-line"></i></a>
+        </div>
+        <div class="icon icon-fullscreen">
+          <a href=""><i class="ri-fullscreen-line"></i></a>
+        </div>
+        <div class="icon">
+          <a href=""><i class="ri-sun-line"></i></a>
+        </div>
+        <div class="icon">
+          <a href=""><i class="ri-notification-3-line"></i></a>
+          <span>5</span>
+        </div>
+        <div class="separator"></div>
+        <div>
+          <a href=""><img class="img" src="../assets/images/person-image.jpg" /></a>
+        </div>
+        <div id="menuBtn" class="menu cursor-pointer icon d-md-none">
+          <i class="ri-menu-line"></i>
+        </div>
+        <div class="d-none d-xl-block ms-1">
+          <p class="name">Burhan</p>
+          <p class="title">Founder</p>
+        </div>
+      </section>
+    </header>
+    <!-- sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-top">
+        <div class="d-flex align-items-end sidebar-logo">
+          <img class="d-inline-block mb-2 me-1" src="../assets/images/nomad_logo.png" alt="" />
+          <h2 class="text-dark sidebar-text">Nomad</h2>
+        </div>
+        <div id="closeBtn" class="close-btn d-flex d-md-none cursor-pointer">
+          <div><i class="ri-arrow-left-s-line"></i></div>
+        </div>
       </div>
       <div class="navlinks-wrap">
         <ul id="navLinks">
-          <li><i class="fas fa-home"></i><span class="sidebar-text">Home</span></li>
-          <li><i class="fas fa-user"></i><span class="sidebar-text">Profile</span></li>
-          <li><i class="fas fa-cog"></i><span class="sidebar-text">Settings</span></li>
-          <li><i class="fas fa-envelope"></i><span class="sidebar-text">Messages</span></li>
-          <li><i class="fas fa-info-circle"></i><span class="sidebar-text">About</span></li>
-          <li><i class="fas fa-question-circle"></i><span class="sidebar-text">Help</span></li>
-          <li><i class="fas fa-home"></i><span class="sidebar-text">Home</span></li>
-          <li><i class="fas fa-user"></i><span class="sidebar-text">Profile</span></li>
-          <li><i class="fas fa-cog"></i><span class="sidebar-text">Settings</span></li>
-          <li><i class="fas fa-envelope"></i><span class="sidebar-text">Messages</span></li>
-          <li><i class="fas fa-info-circle"></i><span class="sidebar-text">About</span></li>
-          <li><i class="fas fa-question-circle"></i><span class="sidebar-text">Help</span></li>
-          <li><i class="fas fa-home"></i><span class="sidebar-text">Home</span></li>
-          <li><i class="fas fa-user"></i><span class="sidebar-text">Profile</span></li>
-          <li><i class="fas fa-cog"></i><span class="sidebar-text">Settings</span></li>
-          <li><i class="fas fa-envelope"></i><span class="sidebar-text">Messages</span></li>
-          <li><i class="fas fa-info-circle"></i><span class="sidebar-text">About</span></li>
-          <li><i class="fas fa-question-circle"></i><span class="sidebar-text">Help</span></li>
+          <li>
+            <i class="fa-solid fa-chart-pie"></i>
+            <h6 class="sidebar-text m-0">Dashboard</h6>
+          </li>
+          <li>
+            <i class="fa-solid fa-apple-whole"></i>
+            <h6 class="sidebar-text m-0">Products</h6>
+          </li>
+          <li>
+            <i class="fa-solid fa-truck-ramp-box"></i>
+            <h6 class="sidebar-text m-0">Orders</h6>
+          </li>
+          <li>
+            <i class="fa-solid fa-face-smile"></i>
+            <h6 class="sidebar-text m-0">Sellers</h6>
+          </li>
+          <li>
+            <i class="fa-solid fa-map"></i>
+            <h6 class="sidebar-text m-0">Invoice</h6>
+          </li>
+          <li>
+            <i class="fa-solid fa-plane"></i>
+            <h6 class="sidebar-text m-0">Shipping</h6>
+          </li>
+          <li>
+            <i class="fa-solid fa-sun"></i>
+            <h6 class="sidebar-text m-0">Coupons</h6>
+          </li>
+          <li>
+            <i class="fa-solid fa-star"></i>
+            <h6 class="sidebar-text m-0">Reviews</h6>
+          </li>
+          <li>
+            <i class="fa-solid fa-warehouse"></i>
+            <h6 class="sidebar-text m-0">Brands</h6>
+          </li>
+          <li>
+            <i class="fa-solid fa-chart-simple"></i>
+            <h6 class="sidebar-text m-0">Statistics</h6>
+          </li>
+          <li>
+            <i class="fa-solid fa-user"></i>
+            <h6 class="sidebar-text m-0">Account</h6>
+          </li>
         </ul>
       </div>
-      <div>bottom</div>
-    </div>
-    <div class="overlay d-md-none" id="overlay"></div>
+      <ul>
+        <li class="logout-btn">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <h6 class="sidebar-text m-0">Logout</h6>
+        </li>
+      </ul>
+    </aside>
     <main class="main-content">
       <h1>Responsive Sidebar</h1>
       <p>This layout adjusts based on screen size.</p>
     </main>
     <!-- script -->
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <!--  app init script -->
     <script src="./app.init.js"></script>
+    <!-- js script -->
+    <script></script>
   </body>
 </html>
