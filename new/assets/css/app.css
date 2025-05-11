@@ -1,0 +1,270 @@
+/* 
+global styles
+*/
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f5f7;
+  margin-right: 1rem;
+  border-radius: 50%;
+  z-index: 10002;
+}
+.logout-btn:hover {
+  background: white !important;
+}
+/* header styles */
+.header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: -3.125rem;
+  z-index: 100;
+  padding: 1.25rem;
+  padding-top: 4.375rem;
+}
+.header.sticked {
+  background-color: white;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.01); */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+.header .date {
+  flex: 1;
+}
+.header .date i {
+  color: #4b93ff;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+.header .date span {
+  font-size: 1.25rem;
+}
+.header .icon {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  margin-left: 0.5rem;
+  border-radius: 50%;
+}
+.header .icon span {
+  display: flex;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 16px;
+  height: 16px;
+  color: white;
+  background-color: red;
+  font-size: 8px;
+  font-weight: 600;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.header.sticked .icon {
+  background-color: #f6f5f7;
+}
+.header .separator {
+  border-right: 1px solid #6d7080;
+  width: 1px;
+  height: 20px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.header .img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.header .name {
+  font-size: 14px;
+  margin: 0;
+}
+.header .title {
+  font-size: 12px;
+  margin: 0;
+  color: #6d7080;
+}
+/*
+sidebar styles
+*/
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 15.625rem;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  color: #6d7080;
+  background: white;
+  transition: transform 0.4s ease, width 0.4s ease;
+  z-index: 1000;
+  box-shadow: 1px 0 4px rgba(0, 0, 0, 0.01);
+  /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05); */
+}
+.sidebar-top {
+  position: relative;
+}
+.sidebar-logo {
+  padding: 1.25rem 1rem;
+  padding-top: 4.5rem;
+}
+.sidebar-logo img {
+  width: 2rem;
+  height: 2rem;
+}
+.sidebar-logo h2 {
+  font-weight: bold;
+}
+.navlinks-wrap {
+  overflow-y: auto;
+  scrollbar-width: none;
+  height: 100%;
+}
+.navlinks-wrap::-webkit-scrollbar {
+  display: none;
+}
+.sidebar ul {
+  list-style: none;
+}
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.sidebar ul li i {
+  text-align: center;
+  margin-right: 0.5rem;
+  min-width: 1.25rem;
+}
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  color: #4b93ff;
+  background: #dbe9ff;
+}
+.sidebar-text {
+  display: inline;
+}
+/*
+overlay styles
+*/
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 900;
+}
+.overlay.show {
+  display: block;
+}
+/*
+main styles
+*/
+main {
+  flex: 1;
+  padding: 1.25rem;
+  min-height: 100vh;
+}
+.main-content {
+  margin-left: 15.625rem;
+  transition: margin-left 0.3s ease;
+}
+/* 
+min-width
+*/
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+/*  */
+/* Small devices (landscape phones, 576px and up) */
+/* sm+ */
+@media (min-width: 576px) {
+}
+/* Medium devices (tablets, 768px and up) */
+/* md+ */
+@media (min-width: 768px) {
+}
+/* Large devices (desktops, 992px and up) */
+/* lg+ */
+@media (min-width: 992px) {
+}
+/* X-Large devices (large desktops, 1200px and up) */
+/* xl+ */
+@media (min-width: 1200px) {
+  .sidebar {
+    width: 15.625rem;
+    transform: translateX(0);
+  }
+  .main-content {
+    margin-left: 15.625rem;
+  }
+  .sidebar-text {
+    display: inline;
+  }
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+/* xxl+ */
+@media (min-width: 1400px) {
+}
+/* 
+max-width
+*/
+/* X-Small devices (portrait phones, less than 576px) */
+/* xs- */
+@media (max-width: 575.98px) {
+}
+/* Small devices (landscape phones, less than 768px) */
+/* sm- */
+@media (max-width: 767.98px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  .main-content {
+    margin-left: 0;
+  }
+}
+/* Medium devices (tablets, less than 992px) */
+/* md- */
+@media (max-width: 991.98px) {
+}
+/* Large devices (desktops, less than 1200px) */
+/* lg- */
+@media (max-width: 1199.98px) {
+}
+/* X-Large devices (large desktops, less than 1400px) */
+/* xl- */
+@media (max-width: 1399.98px) {
+}
+/*  */
+/* XX-Large devices (larger desktops)
+No media query since the xxl breakpoint has no upper bound on its width */
+/* 
+combined
+*/
+/* Tablet: icons only */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .sidebar {
+    width: 3.75rem;
+    transform: translateX(0);
+  }
+  .main-content {
+    margin-left: 3.75rem;
+  }
+  .sidebar-text {
+    display: none;
+  }
+}

@@ -4,8 +4,19 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  /* display: flex; */
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Nunito", sans-serif; */
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Inter", sans-serif;
   background-color: #f6f5f7;
+}
+dl,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
 }
 ul,
 li,
