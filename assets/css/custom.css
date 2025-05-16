@@ -52,6 +52,14 @@
   color: white;
 }
 
+.color-gray {
+  color: #e2e0e4;
+}
+
+.color-gray-dark {
+  color: #93959c;
+}
+
 /* bg */
 .bg-yellow {
   background-color: #f1be46;
@@ -86,7 +94,7 @@
   background-color: #1ea6d3;
 }
 
-.bg-success {
+.bg-successful {
   background-color: #06d6a0;
 }
 
@@ -105,6 +113,19 @@
 .bg-white {
   background-color: white;
 }
+
+.bg-gray {
+  background-color: #e2e0e4;
+}
+
+.bg-gray-dark {
+  background-color: #93959c;
+}
+
+.bg-none{
+  background-color: transparent;
+}
+
 /* font-weight */
 .light {
   font-weight: 300;
@@ -128,6 +149,10 @@
 .fs-7 {
   font-size: 14px;
 }
+
+.fs-8{
+  font-size: 12px;
+}
 /*  */
 .cursor-pointer {
   cursor: pointer;
@@ -142,10 +167,37 @@
   border-radius: 0.75rem;
 }
 
+.card-footer {
+  border: 0;
+  background-color: white;
+  border-radius: 0.75rem;
+}
+
 /* .list-group-item {
   padding: 0.8rem 0.8rem;
 } */
 
 .round {
   border-radius: 0.75rem;
+}
+
+.no-borders,
+.no-borders th,
+.no-borders td,
+.no-borders thead,
+.no-borders tbody,
+.no-borders tr {
+  border: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Optional: remove bottom border under the thead */
+.no-borders thead {
+  border-bottom: none !important;
+}
+
+.table-spacing {
+  border-collapse: separate !important;
+  border-spacing: 0 0.75rem; /* adjust vertical gap */
 }

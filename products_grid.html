@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nomad Product List View</title>
+    <!-- favicon -->
+    <link rel="icon" href="./nomad.ico" type="image/x-icon" />
+    <!-- boot strap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- font link -->
+    <!-- poppins -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" /> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" /> -->
+    <!-- roboto -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- nunito -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- poppins -->
+    <!-- <link rel="stylesheet" href="./assets/fonts/poppins/poppins.css" /> -->
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+    <!-- apex charts css -->
+    <link rel="stylesheet" href="./assets/libs/apex-charts/apexcharts.css" />
+    <!-- global style -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+    <!-- app style -->
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <!-- internal styles -->
+    <style></style>
+    <!-- app js -->
+    <script src="./assets/js/app.js"></script>
+    <!-- js script -->
+    <script></script>
+  </head>
+
+  <body>
+    <div class="overlay d-md-none" id="overlay"></div>
+    <!-- header -->
+    <header id="header" class="main-content header">
+      <section class="container-fluid d-flex align-items-center">
+        <div class="date">
+          <span class="d-none d-md-block"><i class="ri-calendar-fill"></i>May 02, 2025</span>
+          <div class="d-md-none">
+            <img src="./assets/images/nomad_logo.png" alt="" />
+            <span class="logo-name">Nomad</span>
+          </div>
+        </div>
+        <div class="icon">
+          <a href=""><i class="ri-store-line"></i></a>
+        </div>
+        <div class="icon icon-fullscreen d-none d-md-flex">
+          <a href=""><i class="ri-fullscreen-line"></i></a>
+        </div>
+        <div class="icon">
+          <a href=""><i class="ri-sun-line"></i></a>
+        </div>
+        <div class="icon">
+          <a href=""><i class="ri-notification-3-line"></i></a>
+          <span>5</span>
+        </div>
+        <div class="separator"></div>
+        <div>
+          <a href=""><img class="img" src="./assets/images/person-image.jpg" /></a>
+        </div>
+        <div id="menuBtn" class="menu cursor-pointer icon d-md-none">
+          <i class="ri-menu-line"></i>
+        </div>
+        <div class="d-none d-xl-block ms-1">
+          <p class="name">Burhan</p>
+          <p class="title">Founder</p>
+        </div>
+      </section>
+    </header>
+    <!-- sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-top">
+        <div class="d-flex align-items-end sidebar-logo">
+          <img class="d-inline-block mb-2 me-1" src="./assets/images/nomad_logo.png" alt="" />
+          <h2 class="text-dark sidebar-text">Nomad</h2>
+        </div>
+        <div id="closeBtn" class="close-btn d-flex d-md-none cursor-pointer">
+          <div><i class="ri-arrow-left-s-line"></i></div>
+        </div>
+      </div>
+      <div class="navlinks-wrap">
+        <ul id="navLinks">
+          <li>
+            <a href="index.html">
+              <i class="ri-dashboard-horizontal-fill"></i>
+              <h6 class="sidebar-text m-0">Dashboard</h6>
+            </a>
+          </li>
+          <li>
+            <a href="products.html">
+              <i class="ri-box-3-fill"></i>
+              <h6 class="sidebar-text m-0">Products</h6>
+            </a>
+          </li>
+          <li>
+            <i class="ri-shopping-cart-2-fill"></i>
+            <h6 class="sidebar-text m-0">Orders</h6>
+          </li>
+          <li>
+            <i class="ri-spy-fill"></i>
+            <h6 class="sidebar-text m-0">Sellers</h6>
+          </li>
+          <li>
+            <i class="ri-file-list-3-fill"></i>
+            <h6 class="sidebar-text m-0">Invoice</h6>
+          </li>
+          <li>
+            <i class="ri-truck-fill"></i>
+            <h6 class="sidebar-text m-0">Shipping</h6>
+          </li>
+          <li>
+            <i class="ri-price-tag-3-fill"></i>
+            <h6 class="sidebar-text m-0">Coupons</h6>
+          </li>
+          <li>
+            <i class="fa-solid fa-star"></i>
+            <h6 class="sidebar-text m-0">Reviews</h6>
+          </li>
+          <li>
+            <i class="ri-store-fill"></i>
+            <h6 class="sidebar-text m-0">Brands</h6>
+          </li>
+          <li>
+            <i class="fa-solid fa-chart-simple"></i>
+            <h6 class="sidebar-text m-0">Statistics</h6>
+          </li>
+          <li>
+            <i class="fa-solid fa-user"></i>
+            <h6 class="sidebar-text m-0">Account</h6>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li class="logout-btn">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <h6 class="sidebar-text m-0">Logout</h6>
+        </li>
+      </ul>
+    </aside>
+    <!-- page title -->
+    <div class="main-content mt-4">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <h1 class="m-0">Products Grid</h1>
+          <h1 class="m-0 ms-2 color-yellow"><i class="ri-box-3-fill"></i></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content mt-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-4 col-xxl-3">
+            <div class="filter">
+              <aside>
+                <div class="card mb-4">
+                  <div class="card-header d-flex justify-content-between mt-3">
+                    <h5 class="fw-bold">Filters</h5>
+                    <p class="text-decoration-underline color-blue fs-7 text-nowrap">Clear All</p>
+                  </div>
+                  <div class="card-body">
+                    <div>
+                      <p class="text-muted fs-7">PRODUCTS</p>
+                      <ul class="medium">
+                        <li class="mb-3">Grocery</li>
+                        <li class="d-flex align-items-center justify-content-between mb-3">
+                          <p class="mb-0">Fashion</p>
+                          <span style="font-size: 11px" class="badge bg-gray color-gray-dark">5</span>
+                        </li>
+                        <li class="d-flex align-items-center justify-content-between mb-3">
+                          <p class="mb-0">Watches</p>
+                          <span style="font-size: 11px" class="badge bg-gray color-gray-dark">8</span>
+                        </li>
+                        <li class="mb-3">Electronics</li>
+                        <li class="d-flex align-items-center justify-content-between mb-3">
+                          <p class="mb-0">Furniture</p>
+                          <span style="font-size: 11px" class="badge bg-gray color-gray-dark">6</span>
+                        </li>
+                        <li class="mb-3">Automotive Accessories</li>
+                        <li class="mb-3">Appliances</li>
+                        <li class="">Kids</li>
+                      </ul>
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-muted fs-7">PRICE</p>
+                      <div>supposed to be slider</div>
+                      <div>
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                          <span class="border fs-8 py-1 flex-fill text-center rounded">$0</span>
+                          <p class="mx-2 mb-0">to</p>
+                          <span class="border fs-8 py-1 flex-fill text-center rounded">$2000</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-muted fs-7">SIZES</p>
+                      <div class="d-flex flex-wrap gap-2">
+                        <span
+                          class="text-center color-blue bg-blue-light rounded-circle p-2 fs-8"
+                          style="width: 2rem; height: 2rem"
+                          >XS</span
+                        >
+                        <span
+                          class="text-center color-blue bg-blue-light rounded-circle p-2 fs-8"
+                          style="width: 2rem; height: 2rem"
+                          >S</span
+                        >
+                        <span
+                          class="text-center color-blue bg-blue-light rounded-circle p-2 fs-8"
+                          style="width: 2rem; height: 2rem"
+                          >M</span
+                        >
+                        <span
+                          class="text-center color-blue bg-blue-light rounded-circle p-2 fs-8"
+                          style="width: 2rem; height: 2rem"
+                          >L</span
+                        >
+                        <span
+                          class="text-center color-blue bg-blue-light rounded-circle p-2 fs-8"
+                          style="width: 2rem; height: 2rem"
+                          >XL</span
+                        >
+                        <span
+                          class="text-center color-blue bg-blue-light rounded-circle p-2 fs-8"
+                          style="width: 2rem; height: 2rem"
+                          >2L</span
+                        >
+                        <span
+                          class="text-center color-blue bg-blue-light rounded-circle p-2 fs-8"
+                          style="width: 2rem; height: 2rem"
+                          >3L</span
+                        >
+                        <span
+                          class="text-center color-blue bg-blue-light rounded-circle p-2 fs-8"
+                          style="width: 2rem; height: 2rem"
+                          >4L</span
+                        >
+                      </div>
+                    </div>
+                    <div class="mt-4 d-flex justify-content-between">
+                      <p class="text-muted fs-7 mb-0">DISCOUNT</p>
+                      <span><i class="ri-arrow-down-s-fill text-muted"></i></span>
+                    </div>
+                    <div class="mt-4 d-flex justify-content-between">
+                      <p class="text-muted fs-7 mb-0">RATING</p>
+                      <span><i class="ri-arrow-down-s-fill text-muted"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8 col-xxl-9">
+            <div class="row">
+              <div class="col-12 col-md-6 col-xxl-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div>
+                      <img class="image-fluid rounded" src="./assets/images/07371498707-p.jpg" width="100%" />
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between align-items-end">
+                      <div class="d-flex align-items-center">
+                        <span class="me-2 medium">$123.99</span>
+                        <span class="text-muted text-decoration-line-through fs-7">$299.99</span>
+                      </div>
+                      <div>
+                        <span class="medium fs-7">4.0 <i class="ri-star-fill color-yellow"></i></span>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="semibold mb-0">Beige Hoodie NOMAD</p>
+                      <p class="fs-7 text-muted">Fashion</p>
+                    </div>
+                    <div class="d-flex justify-content-between px-3 mt-2">
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xxl-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div>
+                      <img class="image-fluid rounded" src="./assets/images/07371498707-p.jpg" width="100%" />
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between align-items-end">
+                      <div class="d-flex align-items-center">
+                        <span class="me-2 medium">$123.99</span>
+                        <span class="text-muted text-decoration-line-through fs-7">$299.99</span>
+                      </div>
+                      <div>
+                        <span class="medium fs-7">4.0 <i class="ri-star-fill color-yellow"></i></span>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="semibold mb-0">Beige Hoodie NOMAD</p>
+                      <p class="fs-7 text-muted">Fashion</p>
+                    </div>
+                    <div class="d-flex justify-content-between px-3 mt-2">
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xxl-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div>
+                      <img class="image-fluid rounded" src="./assets/images/07371498707-p.jpg" width="100%" />
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between align-items-end">
+                      <div class="d-flex align-items-center">
+                        <span class="me-2 medium">$123.99</span>
+                        <span class="text-muted text-decoration-line-through fs-7">$299.99</span>
+                      </div>
+                      <div>
+                        <span class="medium fs-7">4.0 <i class="ri-star-fill color-yellow"></i></span>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="semibold mb-0">Beige Hoodie NOMAD</p>
+                      <p class="fs-7 text-muted">Fashion</p>
+                    </div>
+                    <div class="d-flex justify-content-between px-3 mt-2">
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xxl-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div>
+                      <img class="image-fluid rounded" src="./assets/images/07371498707-p.jpg" width="100%" />
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between align-items-end">
+                      <div class="d-flex align-items-center">
+                        <span class="me-2 medium">$123.99</span>
+                        <span class="text-muted text-decoration-line-through fs-7">$299.99</span>
+                      </div>
+                      <div>
+                        <span class="medium fs-7">4.0 <i class="ri-star-fill color-yellow"></i></span>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="semibold mb-0">Beige Hoodie NOMAD</p>
+                      <p class="fs-7 text-muted">Fashion</p>
+                    </div>
+                    <div class="d-flex justify-content-between px-3 mt-2">
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xxl-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div>
+                      <img class="image-fluid rounded" src="./assets/images/07371498707-p.jpg" width="100%" />
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between align-items-end">
+                      <div class="d-flex align-items-center">
+                        <span class="me-2 medium">$123.99</span>
+                        <span class="text-muted text-decoration-line-through fs-7">$299.99</span>
+                      </div>
+                      <div>
+                        <span class="medium fs-7">4.0 <i class="ri-star-fill color-yellow"></i></span>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="semibold mb-0">Beige Hoodie NOMAD</p>
+                      <p class="fs-7 text-muted">Fashion</p>
+                    </div>
+                    <div class="d-flex justify-content-between px-3 mt-2">
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xxl-4">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div>
+                      <img class="image-fluid rounded" src="./assets/images/07371498707-p.jpg" width="100%" />
+                    </div>
+                    <div class="mt-3 d-flex justify-content-between align-items-end">
+                      <div class="d-flex align-items-center">
+                        <span class="me-2 medium">$123.99</span>
+                        <span class="text-muted text-decoration-line-through fs-7">$299.99</span>
+                      </div>
+                      <div>
+                        <span class="medium fs-7">4.0 <i class="ri-star-fill color-yellow"></i></span>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <p class="semibold mb-0">Beige Hoodie NOMAD</p>
+                      <p class="fs-7 text-muted">Fashion</p>
+                    </div>
+                    <div class="d-flex justify-content-between px-3 mt-2">
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                      <div class="text-center">
+                        <p class="semibold mb-0">12</p>
+                        <p class="text-muted medium fs-7">Stock</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-end">
+                <ul class="d-flex fs-7">
+                  <li class="mb-3 border py-1 px-2"><i class="ri-arrow-left-long-line"></i></li>
+                  <li class="mb-3 ms-2 border py-1 px-2">1</li>
+                  <li class="mb-3 ms-2 border py-1 px-2 bg-blue color-white">2</li>
+                  <li class="mb-3 ms-2 border py-1 px-2">3</li>
+                  <li class="mb-3 ms-2 border py-1 px-2"><i class="ri-arrow-right-long-line"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+
+    <!-- script -->
+    <!-- apex charts scrip -->
+    <script src="./assets/libs/apex-charts/apexcharts.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!--  app init script -->
+    <script src="./assets/js/app.init.js"></script>
+  </body>
+</html>

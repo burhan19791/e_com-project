@@ -109,12 +109,16 @@
       <div class="navlinks-wrap">
         <ul id="navLinks">
           <li>
-            <i class="ri-dashboard-horizontal-fill"></i>
-            <h6 class="sidebar-text m-0">Dashboard</h6>
+            <a href="index.html">
+              <i class="ri-dashboard-horizontal-fill"></i>
+              <h6 class="sidebar-text m-0">Dashboard</h6>
+            </a>
           </li>
           <li>
-            <i class="ri-box-3-fill"></i>
-            <h6 class="sidebar-text m-0">Products</h6>
+            <a href="products.html">
+              <i class="ri-box-3-fill"></i>
+              <h6 class="sidebar-text m-0">Products</h6>
+            </a>
           </li>
           <li>
             <i class="ri-shopping-cart-2-fill"></i>
@@ -397,6 +401,39 @@
                       </div>
                     </li>
                     <li
+                      class="list-group-item border-0 px-0 py-3 d-flex justify-content-between align-items-center d-none d-xxl-flex"
+                    >
+                      <div class="d-flex align-items-center">
+                        <img
+                          class="rounded-circle me-2"
+                          src="./assets/images/Flag-United-States-of-America.webp"
+                          style="width: 1.7rem; height: 1.7rem"
+                        />
+                        <p class="mb-0 fw-bold">United States</p>
+                      </div>
+                      <div class="d-flex">
+                        <i class="ri-arrow-right-down-line me-1 color-error"></i>
+                        <p class="mb-0 fs-7">3.53%</p>
+                      </div>
+                    </li>
+                    <li
+                      class="list-group-item border-0 px-0 py-3 d-flex justify-content-between align-items-center d-none d-xxl-flex"
+                    >
+                      <div class="d-flex align-items-center">
+                        <img
+                          class="rounded-circle me-2"
+                          src="./assets/images/Flag-United-States-of-America.webp"
+                          style="width: 1.7rem; height: 1.7rem"
+                        />
+                        <p class="mb-0 fw-bold">United States</p>
+                      </div>
+                      <div class="d-flex">
+                        <i class="ri-arrow-right-down-line me-1 color-error"></i>
+                        <p class="mb-0 fs-7">3.53%</p>
+                      </div>
+                    </li>
+
+                    <li
                       class="list-group-item border-0 px-0 py-3 d-flex justify-content-between align-items-center d-xxl-none"
                     >
                       <div class="d-flex align-items-center">
@@ -552,9 +589,187 @@
     </div>
 
     <div class="main-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card mb-4">
+              <div class="card-header d-flex justify-content-between mt-3">
+                <h5 class="fw-bold">Recent Orders</h5>
+                <span class="d-flex fs-7 text-nowrap semibold"
+                  >Sort By:
+                  <p class="regular text-muted ms-2">Today<i class="ri-arrow-down-s-fill"></i></p
+                ></span>
+              </div>
+              <div class="card-body pb-2">
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="text-nowrap table-light">
+                      <tr>
+                        <th>Order ID</th>
+                        <th>Product Name</th>
+                        <th>Customer Name</th>
+                        <th>Amount</th>
+                        <th>Order Date</th>
+                        <th>Delivery Date</th>
+                        <th>Vendor</th>
+                        <th>Ratings</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody class="fs-7">
+                      <tr>
+                        <td><a href="" class="color-blue">#TB010331</a></td>
+                        <td>Macbook Pro</td>
+                        <td>
+                          <span
+                            ><img
+                              class="rounded-circle me-2"
+                              src="./assets/images/person-image.jpg"
+                              style="width: 1.8rem; height: 1.8rem"
+                            />Terry White</span
+                          >
+                        </td>
+                        <td>$658.00</td>
+                        <td>17 Dec, 2022</td>
+                        <td>26 Jan, 2023</td>
+                        <td>Brazil</td>
+                        <td>
+                          <span>4.5 <i class="ri-star-half-line color-yellow"></i></span>
+                        </td>
+                        <td><span class="badge bg-successful p-2">Delivered</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="color-blue">#TB010332</a></td>
+                        <td>Borosil Paper Cup</td>
+                        <td>
+                          <span
+                            ><img
+                              class="rounded-circle me-2"
+                              src="./assets/images/Andrzej_Person_Kancelaria_Senatu.jpg"
+                              style="width: 1.8rem; height: 1.8rem"
+                            />Daniel Gonzalez</span
+                          >
+                        </td>
+                        <td>$345.00</td>
+                        <td>20 Dec, 2022</td>
+                        <td>26 Jan, 2023</td>
+                        <td>Pakistan</td>
+                        <td>
+                          <span>3.5 <i class="ri-star-half-line color-yellow"></i></span>
+                        </td>
+                        <td><span class="badge bg-yellow p-2">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="color-blue">#TB010333</a></td>
+                        <td>Stillbird Helmet</td>
+                        <td>
+                          <span
+                            ><img
+                              class="rounded-circle me-2"
+                              src="./assets/images/General_Asim_Munir_(Pakistan).jpg.webp"
+                              style="width: 1.8rem; height: 1.8rem"
+                            />Stephen Bird</span
+                          >
+                        </td>
+                        <td>$345.20</td>
+                        <td>20 Dec, 2022</td>
+                        <td>29 Dec, 2023</td>
+                        <td>Portugal</td>
+                        <td>
+                          <span>4.5 <i class="ri-star-half-line color-yellow"></i></span>
+                        </td>
+                        <td><span class="badge bg-yellow p-2">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="color-blue">#TB010334</a></td>
+                        <td>Bentwood Chair</td>
+                        <td>
+                          <span
+                            ><img
+                              class="rounded-circle me-2"
+                              src="./assets/images/images (1).jpeg"
+                              style="width: 1.8rem; height: 1.8rem"
+                            />Ashley Silva</span
+                          >
+                        </td>
+                        <td>$45.30</td>
+                        <td>17 Dec, 2022</td>
+                        <td>16 Feb, 2023</td>
+                        <td>America</td>
+                        <td>
+                          <span>3.0 <i class="ri-star-s-fill color-yellow"></i></span>
+                        </td>
+                        <td><span class="badge bg-error p-2">Cancelled</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="color-blue">#TB010335</a></td>
+                        <td>Apple Headphones</td>
+                        <td>
+                          <span
+                            ><img
+                              class="rounded-circle me-2"
+                              src="./assets/images/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-fr.avif"
+                              style="width: 1.8rem; height: 1.8rem"
+                            />Scott Wilson</span
+                          >
+                        </td>
+                        <td>$415.00</td>
+                        <td>17 Dec, 2022</td>
+                        <td>26 Mar, 2023</td>
+                        <td>Russia</td>
+                        <td>
+                          <span>4.5 <i class="ri-star-half-line color-yellow"></i></span>
+                        </td>
+                        <td><span class="badge bg-successful p-2">Delivered</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="color-blue">#TB010336</a></td>
+                        <td>Apple Watch</td>
+                        <td>
+                          <span
+                            ><img
+                              class="rounded-circle me-2"
+                              src="./assets/images/WhatsApp Image 2024-08-04 at 12.40.17_c38256fa.jpg"
+                              style="width: 1.8rem; height: 1.8rem"
+                            />Heather Jimenez</span
+                          >
+                        </td>
+                        <td>$451.99</td>
+                        <td>17 Dec, 2022</td>
+                        <td>18 Apr, 2023</td>
+                        <td>France</td>
+                        <td>
+                          <span>4.0 <i class="ri-star-s-fill color-yellow"></i></span>
+                        </td>
+                        <td><span class="badge bg-error p-2">Cancelled</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- table-responsive -->
+              </div>
+              <div class="card-footer py-0 mb-1 d-flex justify-content-between">
+                <p class="fs-7 text-muted">Showing 6 Out Of 15 Results</p>
+                <div class="d-flex align-items-center">
+                  <ul class="d-flex fs-7">
+                    <li class="mb-3 border py-1 px-2"><i class="ri-arrow-left-long-line"></i></li>
+                    <li class="mb-3 ms-2 border py-1 px-2">1</li>
+                    <li class="mb-3 ms-2 border py-1 px-2 bg-blue color-white">2</li>
+                    <li class="mb-3 ms-2 border py-1 px-2">3</li>
+                    <li class="mb-3 ms-2 border py-1 px-2"><i class="ri-arrow-right-long-line"></i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 order-md-last order-xxl-first col-xxl-3">
+          <div class="col-12 col-md-6 col-lg-4 order-md-last order-xxl-first col-xxl-3 mt-4">
             <div class="card" style="height: 528px">
               <div class="card-header d-flex justify-content-between mt-3">
                 <h5 class="fw-bold">Customer Satisfaction</h5>
@@ -562,7 +777,7 @@
               </div>
               <div class="card-body">
                 <div id="customer-chart"></div>
-                <div class="row d-flex justify-content-between mt-4">
+                <div class="row d-flex justify-content-between mt-3">
                   <div class="col-6 d-flex flex-column align-items-center justify-content-center mb-5">
                     <h6 class="fw-bold mb-1">10,823 AED</h6>
                     <p class="mb-0 fs-7 text-muted"><i class="ri-square-fill color-blue"></i> This Month</p>
@@ -575,10 +790,144 @@
               </div>
             </div>
           </div>
-          <div class="border col-12 col-md-12 col-xxl-9">Stock Report</div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mt-4">
+          <div class="col-12 col-md-12 col-xxl-9">
+            <div class="card mb-4 mt-4" style="height: 528px">
+              <div class="card-header d-flex justify-content-between mt-4 align-items-center">
+                <h5 class="fw-bold">Stock Report</h5>
+                <span class="d-flex badge align-items-center justify-content-center bg-blue color-blue-light fs-7 py-2"
+                  >Generate Report</span
+                >
+              </div>
+              <div class="card-body pb-2">
+                <div class="table-responsive">
+                  <table class="table no-borders table-spacing">
+                    <thead class="text-nowrap table-light">
+                      <tr>
+                        <th>Order ID</th>
+                        <th>Product Name</th>
+                        <th>Updated Date</th>
+                        <th>Amount</th>
+                        <th>Stock Status</th>
+                        <th>Quantity</th>
+                      </tr>
+                    </thead>
+                    <tbody class="fs-7 text-nowrap">
+                      <tr>
+                        <td><a href="" class="color-blue">#00541</a></td>
+                        <td>
+                          <span
+                            ><img
+                              class="rounded-circle me-2"
+                              src="./assets/images/07371498707-p.jpg"
+                              style="width: 1.8rem; height: 1.8rem"
+                            />
+                            Rockerz Ear Bluetooth Headphones</span
+                          >
+                        </td>
+                        <td>16 Aug, 2022</td>
+                        <td>$658.00</td>
+                        <td><span class="badge bg-successful p-2">In Stock</span></td>
+                        <td>15 PCS</td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="color-blue">##07484</a></td>
+                        <td>
+                          <span
+                            ><img
+                              class="rounded-circle me-2"
+                              src="./assets/images/27483946_57262455_600.webp"
+                              style="width: 1.8rem; height: 1.8rem"
+                            />
+                            United Colors Of Benetton</span
+                          >
+                        </td>
+                        <td>05 Sep, 2022</td>
+                        <td>$145.00</td>
+                        <td><span class="badge bg-yellow p-2">Low Stock</span></td>
+                        <td>05 PCS</td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="color-blue">#01641</a></td>
+                        <td>
+                          <span
+                            ><img
+                              class="rounded-circle me-2"
+                              src="./assets/images/66ee7987d0331055e13071f2-lymio-men-jeans-men-jeans-pants.jpg"
+                              style="width: 1.8rem; height: 1.8rem"
+                            />
+
+                            Striped Baseball Cap</span
+                          >
+                        </td>
+                        <td>28 Sep, 2022</td>
+                        <td>$215.99</td>
+                        <td><span class="badge bg-error p-2">Out Of Stock</span></td>
+                        <td>0 PCS</td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="color-blue">#00065</a></td>
+                        <td>
+                          <span
+                            ><img
+                              class="rounded-circle me-2"
+                              src="./assets/images/hoodie.jpeg"
+                              style="width: 1.8rem; height: 1.8rem"
+                            />
+
+                            350 ml Glass Grocery Container</span
+                          >
+                        </td>
+                        <td>02 Oct, 2022</td>
+                        <td>$79.99</td>
+                        <td><span class="badge bg-successful p-2">In Stock</span></td>
+                        <td>37 PCS</td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="color-blue">#00156</a></td>
+                        <td>
+                          <span
+                            ><img
+                              class="rounded-circle me-2"
+                              src="./assets/images/glossier-creamhoodie-carousel-01.avif"
+                              style="width: 1.8rem; height: 1.8rem"
+                            />
+
+                            One Seater Sofa</span
+                          >
+                        </td>
+                        <td>11 Oct, 2022</td>
+                        <td>$264.99</td>
+                        <td><span class="badge bg-successful p-2">In Stock</span></td>
+                        <td>23 PCS</td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="color-blue">#09102</a></td>
+                        <td>
+                          <span
+                            ><img
+                              class="rounded-circle me-2"
+                              src="./assets/images/07371498707-p.jpg"
+                              style="width: 1.8rem; height: 1.8rem"
+                            />
+
+                            Men's Running Shoes Active Grip</span
+                          >
+                        </td>
+                        <td>19 Nov, 2022</td>
+                        <td>$148.00</td>
+                        <td><span class="badge bg-yellow p-2">In Stock</span></td>
+                        <td>08 PCS</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- table-responsive -->
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
             <div class="card" style="max-height: 528px">
-              <div class="card-header d-flex justify-content-between mt-3">
+              <div class="card-header d-flex justify-content-between mt-4">
                 <h5 class="fw-bold">Product Delivery</h5>
                 <span class="text-muted fs-7">See All <i class="ri-arrow-right-long-line"></i></span>
               </div>
@@ -741,9 +1090,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mt-4">
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
             <div class="card" style="height: 528px">
-              <div class="card-header d-flex justify-content-between mt-3">
+              <div class="card-header d-flex justify-content-between mt-4">
                 <h5 class="fw-bold">Top Categories</h5>
                 <span class="text-muted fs-7">Report <i class="ri-arrow-down-s-fill"></i></span>
               </div>
@@ -770,9 +1119,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mt-4">
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
             <div class="card mb-4" style="max-height: 528px">
-              <div class="card-header d-flex justify-content-between mt-3">
+              <div class="card-header d-flex justify-content-between mt-4">
                 <h5 class="fw-bold">New Customers</h5>
                 <span class="text-muted fs-7">See All <i class="ri-arrow-right-long-line"></i></span>
               </div>
@@ -935,9 +1284,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mt-4">
+          <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
             <div class="card" style="max-height: 528px">
-              <div class="card-header d-flex justify-content-between mt-3">
+              <div class="card-header d-flex justify-content-between mt-4">
                 <h5 class="fw-bold">Top Products</h5>
                 <span class="text-muted fs-7">See All <i class="ri-arrow-right-long-line"></i></span>
               </div>
@@ -1140,7 +1489,13 @@
       </div>
     </div>
 
-    <div style="height: 1000px"></div>
+    <!-- <div class="main-content bg-white">
+      <div class="row">
+        <div class="col-12">
+          <div class="p-4"><p class="fs-7 text-muted mb-0">© Burhanalishah</p></div>
+        </div>
+      </div>
+    </div> -->
 
     <!-- script -->
     <!-- apex charts scrip -->
